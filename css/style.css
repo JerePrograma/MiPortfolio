@@ -503,12 +503,13 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-  background: url("../img/header-bg.jpg") right bottom no-repeat;
-  background-size: contain;
+  background: url("https://source.unsplash.com/1600x900/?technology,code,developer") center center no-repeat;
+  background-size: cover;
   padding: 110px 0 100px 0;
   height: auto;
   background-color: #fbfbfb;
 }
+
 .hero h1 {
   font-size: 120px;
   letter-spacing: -8px;
