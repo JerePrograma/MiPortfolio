@@ -34,6 +34,40 @@ a:active {
   text-decoration: none;
   outline: none !important;
 }
+.img.blog {
+  width: 720px;
+  height: 400px;
+  overflow: hidden; /* Oculta cualquier parte fuera de estas dimensiones */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-image {
+  width: 720px; /* Ancho deseado */
+  height: 400px; /* Alto deseado */
+  object-fit: cover; /* Recorta y ajusta la imagen */
+  object-position: center center; /* Centra horizontal y verticalmente */
+  display: block; /* Asegura que la imagen sea un bloque */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+.scrollto {
+  background-color: #ff5722; /* Color diferenciador */
+  color: #ffffff; /* Texto blanco para contraste */
+  padding: 1px 1px; /* Ajusta el tamaño del botón */
+  border-radius: 7px; /* Bordes más redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1px; /* Tamaño del texto más pequeño */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.scrollto:hover {
+  background-color: #e64a19; /* Color más oscuro al pasar el cursor */
+  color: #ffffff;
+}
+
 p {
   color: #8c9398;
   word-spacing: 1px;
@@ -503,7 +537,8 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-  background: url("https://source.unsplash.com/1600x900/?technology,code,developer") center center no-repeat;
+  background: url("https://source.unsplash.com/1600x900/?technology,code,developer")
+    center center no-repeat;
   background-size: cover;
   padding: 110px 0 100px 0;
   height: auto;
@@ -1434,4 +1469,3 @@ ul.slides li {
   background: #ffe800;
   color: #e04343;
 }
-
